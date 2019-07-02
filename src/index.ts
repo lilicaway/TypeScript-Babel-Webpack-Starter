@@ -1,8 +1,14 @@
-export class C {
-    private x = 10
-    getX = () => this.x;
-    setX = (newVal: number) => { this.x = newVal; }
+import './index.css';
+
+export function createHelloWorld(): Node {
+  return document.createTextNode('Hello world!');
 }
 
-export let x = new C();
-export let y = { ...{ some: "value" } }
+document.addEventListener('DOMContentLoaded', () => {
+  // tslint:disable-next-line:no-console we want to show that the code run.
+  console.log('Document loaded');
+  const root: HTMLDivElement = document.createElement('div');
+  root.appendChild(createHelloWorld());
+
+  document.body.appendChild(root);
+});
