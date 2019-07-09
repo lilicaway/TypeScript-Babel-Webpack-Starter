@@ -19,6 +19,8 @@ with ideas for Webpack based on sweetcoco's
 You can look into those projects to learn how to add extra configuration to this
 repository.
 
+It is ready for deploying in [Heroku](https://www.heroku.com/) as a Node app.
+
 # How do I use it?
 
 ## Building the repo
@@ -50,7 +52,7 @@ npm run serve-dev
 ## Serve in production mode
 
 ```sh
-npm run serve-prod
+npm run build:webpack && npm run serve-prod
 ```
 
 ## Run unit tests with Jasmine
