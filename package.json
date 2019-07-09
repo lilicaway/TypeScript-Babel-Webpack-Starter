@@ -40,7 +40,6 @@
     "nodemon": "^1.19.1",
     "nyc": "^14.1.1",
     "prettier": "1.18.2",
-    "serve": "^11.0.2",
     "svg-inline-loader": "^0.8.0",
     "ts-loader": "^6.0.4",
     "ts-node": "^8.3.0",
@@ -53,6 +52,7 @@
   },
   "dependencies": {
     "css-loader": "^3.0.0",
+    "serve": "^11.0.2",
     "style-loader": "^0.23.1"
   }
 }
